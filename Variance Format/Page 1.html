@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variance Format</title>
+    <link rel="stylesheet" href="/CSS/Styles.css">
+</head>
+<body>
+
+    <!-- for switching between dark and light themes-->
+    <!-- for the svg highlighting the current theme, show a circle -->
+    <svg class="phone--theme" viewBox="0 0 100 100" width="2%" height="2%">
+        <defs>
+            <!-- gradients for the light and dark themes -->
+            <linearGradient x1="0" x2="1" y1="1" y2="0" id="gradient-light-theme">
+                <stop
+                    stop-color="#FF295E"
+                    offset="0">
+                </stop>
+                <stop
+                    stop-color="#EB811C"
+                    offset="1">
+                </stop>
+            </linearGradient>
+            <linearGradient x1="0" x2="1" y1="1" y2="0" id="gradient-dark-theme">
+                <stop
+                    stop-color="#826AFF"
+                    offset="0">
+                </stop>
+                <stop
+                    stop-color="#95C5EF"
+                    offset="1">
+                </stop>
+            </linearGradient>
+
+            <!-- mask allowing to crop the circle for the dark theme -->
+            <mask id="mask-theme">
+                <rect
+                    x="0"
+                    y="0"
+                    width="100"
+                    height="100"
+                    fill="#fff">
+                </rect>
+               
+                
+                <circle
+                    id="mask-circle"
+                    cx="100"
+                    cy="0"
+                    r="0"
+                    fill="#000">
+                </circle>
+            </mask>
+        </defs>
+
+        <!-- include a circle with the predefined gradient and mask -->
+        <circle
+            id="theme-circle"
+            cx="50"
+            cy="50"
+            r="50"
+            mask="url(#mask-theme)"
+            fill="url(#gradient-light-theme)">
+        </circle>
+    </svg>
+ <!-- describe the toggle with a checkbox and a label displaying the actual values -->
+ <form class="phone--toggle">
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <label for="checkbox">Light Dark</label>
+</form>
+<!--End of Switching-->
+<nav>
+    <pre>
+    <a href="Page 1.html">Page 1</a>                                                       <a href="Page 2.html">Page 2</a>                                           <a href="Page 3.html">Page 3</a>
+    </pre>
+</nav>
+
+<center>
+    <div>
+<p class="animated-paragraph">
+    WELCOME<br>TO
+</p>      
+    </div>
+    <main>
+        <img class="Trust circular" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQR2QPYRJvrtqNh_B1kimSsdBP4Vcp2GEDAX0ipe4UzLZN3F_eWhhfB-A&usqp=CAE&s"width="500"height="250"alt="Trust's Profile photo">
+        <h1 style="background-color: dimgrey;font-size: 50px;">Variance Format</h1>
+            <p style="text-align: end;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">by Trust Uwem Udofia</p>
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">...Your preferable, unique and simple website.</p>
+    </center>
+    </main>
+
+
+    <script src="/JS/script.js"></script>
+
+    <footer><center> <h3><a href="Page 2.html">NEXT👉</a></h3></center></footer>
+    
+</body>
+</html>

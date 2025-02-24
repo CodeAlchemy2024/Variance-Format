@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variance Format</title> 
+    <link rel="stylesheet" href="/CSS/Styles.css">
+</head>
+<body>
+
+    
+   
+ 
+    <!-- for the svg highlighting the current theme, show a circle -->
+    <svg class="phone--theme" viewBox="0 0 100 100" width="2%" height="2%">
+        <defs>
+            <!-- gradients for the light and dark themes -->
+            <linearGradient x1="0" x2="1" y1="1" y2="0" id="gradient-light-theme">
+                <stop
+                    stop-color="#FF295E"
+                    offset="0">
+                </stop>
+                <stop
+                    stop-color="#EB811C"
+                    offset="1">
+                </stop>
+            </linearGradient>
+            <linearGradient x1="0" x2="1" y1="1" y2="0" id="gradient-dark-theme">
+                <stop
+                    stop-color="#826AFF"
+                    offset="0">
+                </stop>
+                <stop
+                    stop-color="#95C5EF"
+                    offset="1">
+                </stop>
+            </linearGradient>
+
+            <!-- mask allowing to crop the circle for the dark theme -->
+            <mask id="mask-theme">
+                <rect
+                    x="0"
+                    y="0"
+                    width="100"
+                    height="100"
+                    fill="#fff">
+                </rect>
+               
+                
+                <circle
+                    id="mask-circle"
+                    cx="100"
+                    cy="0"
+                    r="0"
+                    fill="#000">
+                </circle>
+            </mask>
+        </defs>
+
+        <!-- include a circle with the predefined gradient and mask -->
+        <circle
+            id="theme-circle"
+            cx="50"
+            cy="50"
+            r="50"
+            mask="url(#mask-theme)"
+            fill="url(#gradient-light-theme)">
+        </circle>
+    </svg>
+ <!-- describe the toggle with a checkbox and a label displaying the actual values -->
+ <form class="phone--toggle">
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <label for="checkbox">Light Dark</label>
+</form>
+
+<center>
+    <h3><a href="Page 1.html">👈BACK</a></h3>
+</center>
+
+
+    <hr><br><br>
+    <h3><u>Learning Fields</u></h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASRIPT</li>
+    </ul><br><br><hr>
+    <h3><u>Certificates</u></h3>
+    <ol>
+        <li>
+            <form>
+                HTML:<select name="HTML">
+                    <option value="A">Acquired</option>
+                    <option value="B">Yet to be Acquired</option>
+                </select>
+            </form>
+        </li><br>
+        <li>
+            <form>
+                CSS:<select name="CSS">
+                    <option value="A">Acquired</option>
+                    <option value="B">Yet to be Acquired</option>
+                </select>
+            </form>
+        </li><br>
+        <li>
+            <form>
+                JAVASCRIPT:<select name="JAVASCRIPT">
+                    <option value="A">Acquired</option>
+                    <option value="B">Yet to be Acquired</option>
+                </select>
+            </form>
+        </li>
+    </ol><hr><br><br>
+    <h3><u>Levels</u></h3>
+    <table>
+        <thead>
+            <th>Date</th>
+            <th>Levels</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2024</td>
+                <td>A Learner</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <td>An Expert</td>
+            </tr>
+        </tbody>
+    </table><hr>
+    <h3><u>Self Assessment</u></h3>
+    <table>
+        <tr>
+            <th>Areas</th>
+            <th>Ratings</th>
+        </tr>
+        <tr>
+            <td>Versatility</td>
+            <td>🌟🌟🌟🌟</td>
+        </tr>
+        <tr>
+            <td>Expertise</td>
+            <td>🌟🌟🌟🌟</td>
+        </tr>
+    </table>
+    <hr>
+    <footer>
+        <center>
+            <p style="color: #697565;"><b>All Rights Reserved</b></p>
+            <h3><a href="Page 3.html">NEXT👉</a></h3>
+        </center>
+    </footer>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
